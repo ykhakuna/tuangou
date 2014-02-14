@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ViewFlipper
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="#ffffffff" />
+
+    <RadioGroup
+        android:id="@+id/main_radio"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_gravity="bottom"
+        android:background="@drawable/tab_bottom_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/btn_tab_today_deals"
+            style="@style/main_tab_bottom"
+            android:layout_marginTop="2.0dip"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_today_deals"
+            android:text="@string/daily_deals" />
+
+        <RadioButton
+            android:id="@+id/btn_tab_near_deals"
+            style="@style/main_tab_bottom"
+            android:layout_marginTop="2.0dip"
+            android:drawableTop="@drawable/tab_near_deals"
+            android:text="@string/nearby_deals" />
+
+        <RadioButton
+            android:id="@+id/btn_tab_my_deals"
+            style="@style/main_tab_bottom"
+            android:layout_marginTop="2.0dip"
+            android:drawableTop="@drawable/tab_my_deals"
+            android:text="@string/my_deals" />
+
+        <RadioButton
+            android:id="@+id/btn_tab_more_deals"
+            style="@style/main_tab_bottom"
+            android:layout_marginTop="2.0dip"
+            android:drawableTop="@drawable/tab_more_deals"
+            android:text="@string/more_options" />
+    </RadioGroup>
+
+</LinearLayout>
